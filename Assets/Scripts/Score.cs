@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] Timer timer;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ShowScore(float nowTimer)
     {
-        
+
     }
 }

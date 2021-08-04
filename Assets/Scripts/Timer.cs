@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
 
     float timer = 0;
     int time = 0;
+    public float NowTimer { get => timer; set { timer = value; } }
     void Start()
     {
         time = maxTimer;
