@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     PlayerJump m_playerJump;
     [SerializeField] float m_jumpPow;
 
+    PlayerGetItem m_playerGetItem; 
+
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
@@ -21,6 +23,8 @@ public class PlayerController : MonoBehaviour
 
         m_playerJump = gameObject.AddComponent<PlayerJump>();
         m_playerJump.Init(m_rb);
+
+        m_playerGetItem = gameObject.AddComponent<PlayerGetItem>();
     }
 
     private void Update()
