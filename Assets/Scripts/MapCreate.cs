@@ -33,10 +33,11 @@ public class MapCreate : MonoBehaviour
     }
 
     /// <summary>
-    /// 足場を生成する
+    /// mapを生成する
     /// </summary>
     public void CreateScaffold()
     {
+
         int createLevel = 32;
         Vector2 mapsHeight = new Vector2(createLevel, 0);
 
@@ -50,36 +51,6 @@ public class MapCreate : MonoBehaviour
         DestroyScaffold();
     }
 
-    /// <summary>
-    /// レベルに応じて難易度を変える
-    /// </summary>
-    /// <param name="level">レベル</param>
-    /// <returns></returns>
-    int LevelRandom(int level)
-    {
-        int num = 0;
-        switch (level)
-        {
-            case 0:
-                num = Random.Range(0, 8);
-                break;
-            case 1:
-                num = Random.Range(3, 12);
-                break;
-            case 2:
-                num = Random.Range(10, 15);
-                break;
-            case 3:
-                num = Random.Range(8, 15);
-                break;
-            case 4:
-                num = Random.Range(15, 20);
-                break;
-            default:
-                break;
-        }
-        return num;
-    }
 
     /// <summary>
     /// 古いマップを破壊する
