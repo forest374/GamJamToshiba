@@ -5,11 +5,11 @@ using UnityEngine;
 public class MapCreate : MonoBehaviour
 {
     [SerializeField] List<GameObject> maps;
+    [SerializeField] float moveSpeed = 0.1f;
 
     List<GameObject> mapsObj = new List<GameObject>();
     Map map;
 
-    int count = 2;
     private void Start()
     {
         StartCreate();
@@ -26,6 +26,9 @@ public class MapCreate : MonoBehaviour
         foreach (var item in mapsObj)
         {
             item.AddComponent<Map>();
+            map = item.GetComponent<Map>();
+            map.MapCreate = this;
+            map.MoveSpeed = moveSpeed;
         }
     }
 
@@ -34,13 +37,16 @@ public class MapCreate : MonoBehaviour
     /// </summary>
     public void CreateScaffold()
     {
-        count++;
-        int createLevel = count * 16;
+        int createLevel = 32;
         Vector2 mapsHeight = new Vector2(createLevel, 0);
 
         int num = Random.Range(0, mapsObj.Count);
         mapsObj.Add(Instantiate(maps[num], mapsHeight, Quaternion.identity)) ;
         mapsObj[mapsObj.Count - 1].AddComponent<Map>();
+        map = mapsObj[mapsObj.Count - 1].GetComponent<Map>();
+        map.MapCreate = this;
+        map.MoveSpeed = moveSpeed;
+
         DestroyScaffold();
     }
 

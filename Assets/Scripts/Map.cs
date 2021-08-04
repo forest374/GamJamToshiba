@@ -13,13 +13,12 @@ public class Map : MonoBehaviour
     private void FixedUpdate()
     {
         transform.Translate(new Vector2(-moveSpeed, 0));
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Limit")
+        float x = transform.position.x;
+        if (x <= -16)
         {
             mapCreate.CreateScaffold();
         }
     }
+
 }
