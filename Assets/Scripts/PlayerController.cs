@@ -4,21 +4,32 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float m_jumpPow;
     Rigidbody2D m_rb;
 
-    PlayerJump m_playerMove;
+    PlayerMove m_playerMove;
+    [SerializeField] float m_moveSpeed;
+
+    PlayerJump m_playerJump;
+    [SerializeField] float m_jumpPow;
 
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
 
-        m_playerMove = gameObject.AddComponent<PlayerJump>();
+        m_playerMove = gameObject.AddComponent<PlayerMove>();
         m_playerMove.Init(m_rb);
+
+        m_playerJump = gameObject.AddComponent<PlayerJump>();
+        m_playerJump.Init(m_rb);
     }
 
     private void Update()
     {
-        m_playerMove.Jump(m_jumpPow);
+        if (Input.GetButtonDown("Jump"))
+        {
+            m_playerJump.Jump(m_jumpPow);
+        }
+
+        m_playerMove.Move(m_moveSpeed);
     }
 }
