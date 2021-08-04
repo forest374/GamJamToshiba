@@ -5,14 +5,16 @@ using UnityEngine;
 public class MapCreate : MonoBehaviour
 {
     [SerializeField] List<GameObject> maps;
+    [SerializeField] float moveSpeed = 0.1f;
 
-    [System.NonSerialized] public List<GameObject> mapsObj = new List<GameObject>();
+    List<GameObject> mapsObj = new List<GameObject>();
+    Map map;
 
-    int count = 2;
     private void Start()
     {
         StartCreate();
     }
+
 
     // 最初のマップを生成する
     public void StartCreate()
@@ -20,20 +22,30 @@ public class MapCreate : MonoBehaviour
         mapsObj.Add(Instantiate(maps[0]));
         mapsObj.Add(Instantiate(maps[1], new Vector2(16, 0), Quaternion.identity));
         mapsObj.Add(Instantiate(maps[2], new Vector2(32, 0), Quaternion.identity));
+
+        foreach (var item in mapsObj)
+        {
+            item.AddComponent<Map>();
+            map = item.GetComponent<Map>();
+            map.MapCreate = this;
+            map.MoveSpeed = moveSpeed;
+        }
     }
 
     /// <summary>
     /// 足場を生成する
     /// </summary>
-    public void CreateScaffold(int level)
+    public void CreateScaffold()
     {
-        count++;
-        int createLevel = count * 16;
+        int createLevel = 32;
         Vector2 mapsHeight = new Vector2(createLevel, 0);
 
-        //int num = LevelRandom(level);
         int num = Random.Range(0, mapsObj.Count);
         mapsObj.Add(Instantiate(maps[num], mapsHeight, Quaternion.identity)) ;
+        mapsObj[mapsObj.Count - 1].AddComponent<Map>();
+        map = mapsObj[mapsObj.Count - 1].GetComponent<Map>();
+        map.MapCreate = this;
+        map.MoveSpeed = moveSpeed;
 
         DestroyScaffold();
     }
