@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    [SerializeField] Score score;
     [SerializeField] int maxTimer = 100;
     [SerializeField] GameObject gameOverText = null;
     [SerializeField] Text timerText;
@@ -24,6 +25,7 @@ public class Timer : MonoBehaviour
         {
             timer += Time.deltaTime;
             timerText.text = (time - (int)timer).ToString();
+            score.ShowScore(timer);
         }
         else 
         {
