@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1284004500260242710}
   - component: {fileID: 8351050448690586209}
   - component: {fileID: 4271116942723729201}
+  - component: {fileID: 8056986682937869328}
   m_Layer: 0
   m_Name: Tilemap (1)
   m_TagString: Untagged
@@ -117,6 +118,22 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &8056986682937869328
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4809348834388853191}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &5399811190114340127
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +146,7 @@ GameObject:
   - component: {fileID: 2179264720486916698}
   m_Layer: 0
   m_Name: Grid10
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,6 +190,7 @@ GameObject:
   - component: {fileID: 8706761087542933350}
   - component: {fileID: 1863996463371494869}
   - component: {fileID: 600793471472598929}
+  - component: {fileID: 4867482160947762955}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -376,7 +394,7 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 17
-    m_Data: {fileID: 11400000, guid: 32cc4772740b90440be693b9b9e1b192, type: 2}
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 17
     m_Data: {fileID: 21300002, guid: 261212b977f594d5dbc48631a5c1295c, type: 3}
@@ -473,3 +491,19 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &4867482160947762955
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8176836206792476123}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001

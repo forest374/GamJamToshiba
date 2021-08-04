@@ -13,8 +13,7 @@ public class PlayerJump : MonoBehaviour
 
     public void Jump(float jumpPow)
     {
-        if (Input.GetButtonDown("Jump") &&
-            m_isGrounded)
+        if (m_isGrounded)
         {
             m_rb.velocity = new Vector2(m_rb.velocity.x, jumpPow);
         }
