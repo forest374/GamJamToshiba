@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 3465650404065592160}
   - component: {fileID: 5600322964757049245}
   m_Layer: 0
-  m_Name: Tilemap (1)
-  m_TagString: Untagged
+  m_Name: PenetrationFloor
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,8 +322,8 @@ GameObject:
   - component: {fileID: 6630329968440743925}
   - component: {fileID: 5094256409611421104}
   m_Layer: 0
-  m_Name: Tilemap
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

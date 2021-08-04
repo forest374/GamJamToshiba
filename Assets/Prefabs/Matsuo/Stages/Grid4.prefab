@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5516854382432659580}
   - component: {fileID: 7455745697523559228}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 5985848630989181458}
   - component: {fileID: 8124140380302662371}
   m_Layer: 0
-  m_Name: Tilemap (1)
+  m_Name: PenetrationFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
