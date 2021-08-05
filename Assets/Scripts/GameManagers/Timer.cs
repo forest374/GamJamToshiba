@@ -7,9 +7,10 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] Score score;
     [SerializeField] int maxTimer = 100;
-    //[SerializeField] GameObject gameOverText = null;
     [SerializeField] Text timerText;
     [SerializeField] Goal goal;
+
+    bool gameMove = true;
 
     float timer = 0;
     int time = 0;
@@ -22,28 +23,29 @@ public class Timer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (time - (int)timer > 0)
+        if (gameMove)
         {
-            timer += Time.deltaTime;
-            timerText.text = (time - (int)timer).ToString();
-            score.ShowScore(timer);
-        }
-        else 
-        {
-            //ゲームを止める
-            goal.GameOver();
+            if (time - (int)timer > 0)
+            {
+                timer += Time.deltaTime;
+                timerText.text = (time - (int)timer).ToString();
+                score.ShowScore(timer);
+            }
+            else
+            {
+                //ゲームを止める
+                goal.GameOver();
+            }
         }
 
     }
 
-    //public void GameOver()
-    //{
-    //    gameOverText.SetActive(true);
-    //    Time.timeScale = 0;
-    //}
-    //public void GameStart()
-    //{
-    //    gameOverText.SetActive(false);
-    //    Time.timeScale = 1;
-    //}
+    public void GameStopCall()
+    {
+        gameMove = false;
+    }
+    public void GameStartCall()
+    {
+        gameMove = true;
+    }
 }

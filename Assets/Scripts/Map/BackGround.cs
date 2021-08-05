@@ -13,7 +13,6 @@ public class BackGround : MonoBehaviour
         }
         else
         {
-            Debug.Log("a");
             Destroy(this);
         }
     }

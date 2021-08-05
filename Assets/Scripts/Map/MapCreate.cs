@@ -46,24 +46,36 @@ public class MapCreate : MonoBehaviour
 
         if (count < goalPoint)
         {
-            int num = Random.Range(0, mapsObj.Count);
+            int num = Random.Range(0, maps.Count);
             mapsObj.Add(Instantiate(maps[num], mapsHeight, Quaternion.identity));
             mapsObj[mapsObj.Count - 1].AddComponent<Map>();
             map = mapsObj[mapsObj.Count - 1].GetComponent<Map>();
             map.MapCreate = this;
             map.MoveSpeed = moveSpeed;
+            count++;
+            DestroyScaffold();
         }
-        else
+        else if(count == goalPoint)
         {
             mapsObj.Add(Instantiate(goalMap, mapsHeight, Quaternion.identity));
             mapsObj[mapsObj.Count - 1].AddComponent<Map>();
             map = mapsObj[mapsObj.Count - 1].GetComponent<Map>();
             map.MapCreate = this;
             map.MoveSpeed = moveSpeed;
+            count++;
+        }
+        else
+        {
+            if (count == goalPoint + 2)
+            {
+                GameStopCall();
+            }
+            else
+            {
+                count++;
+            }
         }
 
-        count++;
-        DestroyScaffold();
     }
 
 
@@ -74,5 +86,22 @@ public class MapCreate : MonoBehaviour
     {
         Destroy(mapsObj[0]);
         mapsObj.RemoveAt(0);
+    }
+
+    public void GameStopCall()
+    {
+        foreach (var item in mapsObj)
+        {
+            map = item.GetComponent<Map>();
+            map.MapStopCall();
+        }
+    }
+    public void GameStartCall()
+    {
+        foreach (var item in mapsObj)
+        {
+            map = item.GetComponent<Map>();
+            map.MapStartCall();
+        }
     }
 }

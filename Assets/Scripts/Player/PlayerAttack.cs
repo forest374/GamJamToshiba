@@ -12,13 +12,6 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown("a"))
-        {
-            Attack();
-        }
-    }
     public void Attack()
     {
         anim.SetBool("Attack", true);
