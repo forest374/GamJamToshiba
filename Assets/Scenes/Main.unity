@@ -290,9 +290,9 @@ MonoBehaviour:
   - {fileID: 5527771365395990940, guid: 9160dba5c638c744283fe031b777b458, type: 3}
   - {fileID: 2456168818237053848, guid: 6de427402ca21e540836414932262fc9, type: 3}
   - {fileID: 5399811190114340127, guid: 51a1ae0436355d9449bab0a02baee650, type: 3}
-  goalMap: {fileID: 0}
+  goalMap: {fileID: 3668083576078038951, guid: 8b46d09acffd2e14f908fc9844d178ae, type: 3}
   moveSpeed: 0.1
-  goalPoint: 10
+  goalPoint: 3
 --- !u!1 &425068306
 GameObject:
   m_ObjectHideFlags: 0
