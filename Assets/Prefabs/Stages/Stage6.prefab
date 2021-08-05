@@ -191,6 +191,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6083390018919782119}
     m_Modifications:
+    - target: {fileID: 604950310094548492, guid: 4dd200009a26c4148b29b3cdd7aef75d,
+        type: 3}
+      propertyPath: m_SurfaceArc
+      value: 170
+      objectReference: {fileID: 0}
     - target: {fileID: 7005963758642044880, guid: 4dd200009a26c4148b29b3cdd7aef75d,
         type: 3}
       propertyPath: m_SortingOrder
