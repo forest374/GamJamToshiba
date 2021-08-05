@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    [SerializeField] AudioClip audioClip;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(this.gameObject);
+
+            AudioSource.PlayClipAtPoint(audioClip,transform.position);
         }
     }
 }
