@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
+    [SerializeField] MapCreate mapCreate;
+    [SerializeField] Timer timer;
+    [SerializeField] PlayerController player;
+
     [SerializeField] GameObject gameOverText = null;
     [SerializeField] GameObject gameClearText = null;
     public void GameOver()
     {
         gameOverText.SetActive(true);
-        Time.timeScale = 0;
+        GameStop();
     }
     public void GameClear()
     {
         gameClearText.SetActive(true);
-        Time.timeScale = 0;
+        GameStop();
     }
-    public void GameStart()
+    public void GameMove()
     {
         gameOverText.SetActive(false);
-        Time.timeScale = 1;
+        GameStart();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,5 +32,23 @@ public class Goal : MonoBehaviour
         {
             GameClear();
         }
+    }
+    public void GoalPoint()
+    {
+        timer.GameStopCall();
+        mapCreate.GameStopCall();
+    }
+
+    void GameStop()
+    {
+        timer.GameStopCall();
+        mapCreate.GameStopCall();
+        player.GameStopCall();
+    }
+    void GameStart()
+    {
+        timer.GameStopCall();
+        mapCreate.GameStopCall();
+        player.GameStopCall();
     }
 }
