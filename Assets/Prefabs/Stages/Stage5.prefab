@@ -116,6 +116,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3024842597278437563}
     m_Modifications:
+    - target: {fileID: 2387471229982099461, guid: c3b8cd40b875930498e7bb21a879ee30,
+        type: 3}
+      propertyPath: m_SurfaceArc
+      value: 170
+      objectReference: {fileID: 0}
     - target: {fileID: 2931526363403328330, guid: c3b8cd40b875930498e7bb21a879ee30,
         type: 3}
       propertyPath: m_Name

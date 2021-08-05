@@ -45,9 +45,9 @@ public class PlayerDamage : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject.tag == "Enemy")
         {
             if (m_index != 0)
             {
@@ -64,5 +64,25 @@ public class PlayerDamage : MonoBehaviour
                 m_goal.GameOver();
             }
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //if (collision.CompareTag("Enemy"))
+        //{
+        //    if (m_index != 0)
+        //    {
+        //        m_aliveBuddy[m_index].SetActive(false);
+        //        Vector2 point = m_aliveBuddy[m_index].transform.position;
+
+        //        m_index--;
+        //        m_aliveBuddy[m_index].SetActive(true);
+        //        m_aliveBuddy[m_index].transform.position = point;
+        //    }
+        //    else
+        //    {
+        //        m_aliveBuddy[m_index].SetActive(false);
+        //        m_goal.GameOver();
+        //    }
+        //}
     }
 }
