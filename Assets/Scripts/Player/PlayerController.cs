@@ -16,22 +16,16 @@ public class PlayerController : MonoBehaviour
 
     PlayerAttack m_playerAttack;
 
-    //[SerializeField] private Transform m_GroundCheck;
 
     [SerializeField] GroundHitTest m_hitTest;
 
-<<<<<<< HEAD
     PlayerDamage m_playerDamage;
     [SerializeField] List<Buddy> m_buddies;
     [SerializeField] Goal m_goal;
 
-=======
-
-    [SerializeField] Goal m_goal;
 
     bool m_move = true;
 
->>>>>>> 114b2ec258951d76426c87a772f87b000bc22259
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
@@ -43,15 +37,12 @@ public class PlayerController : MonoBehaviour
         m_playerJump.Init(m_rb);
 
         m_playerGetItem = gameObject.AddComponent<PlayerGetItem>();
-<<<<<<< HEAD
 
         m_playerDamage = gameObject.AddComponent<PlayerDamage>();
         m_playerDamage.Init(m_buddies, m_goal);
-=======
         m_playerGetItem.Goal = m_goal;
 
         m_playerAttack = gameObject.AddComponent<PlayerAttack>();
->>>>>>> 114b2ec258951d76426c87a772f87b000bc22259
     }
 
     private void Update()
