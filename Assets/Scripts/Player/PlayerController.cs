@@ -24,7 +24,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Goal m_goal;
 
 
-    bool m_move = true;
+    bool m_move = false;
+    public bool Move { get => m_move; set {m_move = value; } }
 
     private void Start()
     {
