@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum buddyType
+{
+    いぬ,
+    さる,
+    きじ
+}
 public class Buddy : MonoBehaviour
 {
     [SerializeField] Transform player;
