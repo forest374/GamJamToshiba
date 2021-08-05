@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Map : MonoBehaviour
 {
+    bool gameMove = true;
+
     MapCreate mapCreate;
     float moveSpeed = 0.1f;
 
@@ -12,13 +14,25 @@ public class Map : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(new Vector2(-moveSpeed, 0));
-
-        float x = transform.position.x;
-        if (x <= -20)
+        if (gameMove)
         {
-            mapCreate.CreateScaffold();
+            transform.Translate(new Vector2(-moveSpeed, 0));
+
+            float x = transform.position.x;
+            if (x <= -20)
+            {
+                mapCreate.CreateScaffold();
+            }
         }
+    }
+
+    public void MapStopCall()
+    {
+        gameMove = false;
+    }
+    public void MapStartCall()
+    {
+        gameMove = true;
     }
 
 }
