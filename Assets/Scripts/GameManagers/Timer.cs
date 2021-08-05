@@ -7,7 +7,7 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] Score score;
     [SerializeField] int maxTimer = 100;
-    [SerializeField] Text timerText;
+    //[SerializeField] Text timerText;
     [SerializeField] Goal goal;
 
     bool gameMove = true;
@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         time = maxTimer;
-        timerText.text = time.ToString();
+        //timerText.text = time.ToString();
     }
 
     private void FixedUpdate()
@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
             if (time - (int)timer > 0)
             {
                 timer += Time.deltaTime;
-                timerText.text = (time - (int)timer).ToString();
+                //timerText.text = (time - (int)timer).ToString();
                 score.ShowScore(timer);
             }
             else

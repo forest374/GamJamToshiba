@@ -11,8 +11,14 @@ public class LifeUpItem : Item
         playerDamage = GameObject.Find("Player").GetComponent<PlayerDamage>();
     }
 
-    protected override void Use()
+    public override void Use()
     {
+        if (!playerDamage)
+        {
+            GameObject.Find("Player").GetComponent<PlayerDamage>();
+        }
+        Debug.Log("get");
         playerDamage.LifeUp();
+        Destroy(this.gameObject);
     }
 }

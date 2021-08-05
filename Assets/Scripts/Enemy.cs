@@ -4,16 +4,25 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+    private Score score;
     [SerializeField] AudioClip audioClip;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
             if (audioClip)
             {
                 AudioSource.PlayClipAtPoint(audioClip, transform.position);
             }
+            if (!score)
+            {
+                score = GameObject.Find("GameManager").GetComponent<Score>();
+            }
+
+            score.EnemyDeath();
+
+            Destroy(this.gameObject);
         }
     }
 }

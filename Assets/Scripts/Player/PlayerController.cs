@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
         m_playerGetItem.Goal = m_goal;
 
         m_playerAttack = gameObject.AddComponent<PlayerAttack>();
+        m_playerAttack.Init();
     }
 
     private void Update()
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump") && m_hitTest.IsGround)
             {
-                m_playerJump.Jump(m_jumpPow);
+                 m_playerJump.Jump(m_jumpPow);
             }
 
             if (Input.GetButtonDown("Fire1"))
