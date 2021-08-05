@@ -15,7 +15,7 @@ public class Map : MonoBehaviour
         transform.Translate(new Vector2(-moveSpeed, 0));
 
         float x = transform.position.x;
-        if (x <= -16)
+        if (x <= -20)
         {
             mapCreate.CreateScaffold();
         }
