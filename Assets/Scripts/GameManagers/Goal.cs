@@ -33,6 +33,11 @@ public class Goal : MonoBehaviour
             GameClear();
         }
     }
+    public void GoalPoint()
+    {
+        timer.GameStopCall();
+        mapCreate.GameStopCall();
+    }
 
     void GameStop()
     {

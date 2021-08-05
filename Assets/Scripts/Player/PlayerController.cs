@@ -16,14 +16,16 @@ public class PlayerController : MonoBehaviour
 
     PlayerAttack m_playerAttack;
 
-    //[SerializeField] private Transform m_GroundCheck;
 
     [SerializeField] GroundHitTest m_hitTest;
 
-
+    PlayerDamage m_playerDamage;
+    [SerializeField] List<Buddy> m_buddies;
     [SerializeField] Goal m_goal;
 
-    bool m_move = true;
+
+    bool m_move = false;
+    public bool Move { get => m_move; set {m_move = value; } }
 
     private void Start()
     {
@@ -36,6 +38,9 @@ public class PlayerController : MonoBehaviour
         m_playerJump.Init(m_rb);
 
         m_playerGetItem = gameObject.AddComponent<PlayerGetItem>();
+
+        m_playerDamage = gameObject.AddComponent<PlayerDamage>();
+        m_playerDamage.Init(m_buddies, m_goal);
         m_playerGetItem.Goal = m_goal;
 
         m_playerAttack = gameObject.AddComponent<PlayerAttack>();

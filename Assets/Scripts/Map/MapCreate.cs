@@ -9,6 +9,7 @@ public class MapCreate : MonoBehaviour
     [SerializeField] float moveSpeed = 0.1f;
     [SerializeField] int goalPoint = 10;
     [SerializeField] GameObject backGround;
+    [SerializeField] Goal goal;
 
     List<GameObject> mapsObj = new List<GameObject>();
     Map map;
@@ -23,9 +24,10 @@ public class MapCreate : MonoBehaviour
     // 最初のマップを生成する
     public void StartCreate()
     {
-        mapsObj.Add(Instantiate(maps[0]));
-        mapsObj.Add(Instantiate(maps[1], new Vector2(16, 0), Quaternion.identity));
-        mapsObj.Add(Instantiate(maps[2], new Vector2(32, 0), Quaternion.identity));
+        mapsObj.Add(Instantiate(maps[3], new Vector2(-15, 0), Quaternion.identity));
+        mapsObj.Add(Instantiate(maps[0], new Vector2(1, 0), Quaternion.identity));
+        mapsObj.Add(Instantiate(maps[1], new Vector2(17, 0), Quaternion.identity));
+        mapsObj.Add(Instantiate(maps[2], new Vector2(33, 0), Quaternion.identity));
 
         foreach (var item in mapsObj)
         {
@@ -41,7 +43,7 @@ public class MapCreate : MonoBehaviour
     /// </summary>
     public void CreateScaffold()
     {
-        int createLevel = 32;
+        int createLevel = 48;
         Vector2 mapsHeight = new Vector2(createLevel, 0);
 
         if (count < goalPoint)
@@ -66,9 +68,9 @@ public class MapCreate : MonoBehaviour
         }
         else
         {
-            if (count == goalPoint + 2)
+            if (count == goalPoint + 3)
             {
-                GameStopCall();
+                goal.GoalPoint();
             }
             else
             {
