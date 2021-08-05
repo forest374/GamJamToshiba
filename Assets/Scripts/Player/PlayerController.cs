@@ -14,9 +14,16 @@ public class PlayerController : MonoBehaviour
 
     PlayerGetItem m_playerGetItem;
 
-    [SerializeField] private Transform m_GroundCheck;
+    PlayerAttack m_playerAttack;
+
+    //[SerializeField] private Transform m_GroundCheck;
 
     [SerializeField] GroundHitTest m_hitTest;
+
+
+    [SerializeField] Goal m_goal;
+
+    bool m_move = true;
 
     private void Start()
     {
@@ -29,15 +36,36 @@ public class PlayerController : MonoBehaviour
         m_playerJump.Init(m_rb);
 
         m_playerGetItem = gameObject.AddComponent<PlayerGetItem>();
+        m_playerGetItem.Goal = m_goal;
+
+        m_playerAttack = gameObject.AddComponent<PlayerAttack>();
     }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump") && m_hitTest.IsGround)
+        if (m_move)
         {
-            m_playerJump.Jump(m_jumpPow);
+            if (Input.GetButtonDown("Jump") && m_hitTest.IsGround)
+            {
+                m_playerJump.Jump(m_jumpPow);
+            }
+
+            if (Input.GetButtonDown("Fire1"))
+            {
+                m_playerAttack.Attack();
+            }
+
+            m_playerMove.Move(m_moveSpeed);
         }
 
-        m_playerMove.Move(m_moveSpeed);
+    }
+
+    public void GameStopCall()
+    {
+        m_move = false;
+    }
+    public void GameStartCall()
+    {
+        m_move = true;
     }
 }
