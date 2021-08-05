@@ -10,8 +10,13 @@ public class ScoreUpItem : Item
     {
         score = GameObject.Find("GameManager").GetComponent<Score>();
     }
-    protected override void Use()
+    public override void Use()
     {
+        if (!score)
+        {
+            GameObject.Find("GameManager").GetComponent<Score>();
+        }
         score.ItemUp(point);
+        Destroy(this.gameObject);
     }
 }
