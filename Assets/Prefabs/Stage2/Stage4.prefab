@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8204670745919390863}
   m_Layer: 0
-  m_Name: Stage6
+  m_Name: Stage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,10 +123,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2478616329322112780, guid: bfec8b79c4f4900448ff15c55763e780,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 3832552337045777712, guid: bfec8b79c4f4900448ff15c55763e780,
         type: 3}
       propertyPath: m_SortingOrder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685698501290256892, guid: bfec8b79c4f4900448ff15c55763e780,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8092196928491721909, guid: bfec8b79c4f4900448ff15c55763e780,
         type: 3}

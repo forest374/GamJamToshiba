@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Prefabs/Scenes/Title.unity
     guid: 369dacde2c8884847a5787c78864d4b1
   - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 8fdf886cd6a626049b5a5c20f400b259
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 767304da513829e4583993d3a4d6dafa
   m_configObjects: {}

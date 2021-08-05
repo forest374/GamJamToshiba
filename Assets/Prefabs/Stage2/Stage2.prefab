@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 539157368071233895}
   m_Layer: 0
-  m_Name: Stage3
+  m_Name: Stage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -257,10 +257,20 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 7596924384633300901, guid: 93251089ffa893b44af33012ecceeb59,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8283937091718978165, guid: 93251089ffa893b44af33012ecceeb59,
         type: 3}
       propertyPath: m_Name
       value: Grid 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8601439696423733308, guid: 93251089ffa893b44af33012ecceeb59,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93251089ffa893b44af33012ecceeb59, type: 3}

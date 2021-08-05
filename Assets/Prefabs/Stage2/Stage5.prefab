@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4255387471389862316}
   m_Layer: 0
-  m_Name: Stage7
+  m_Name: Stage5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -271,6 +271,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3101955174422781712, guid: 679aeabee0faf714fa624990e9135692,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971941975025083678, guid: 679aeabee0faf714fa624990e9135692,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 5460705891270278050, guid: 679aeabee0faf714fa624990e9135692,
         type: 3}
