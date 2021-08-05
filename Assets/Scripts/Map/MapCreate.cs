@@ -8,6 +8,7 @@ public class MapCreate : MonoBehaviour
     [SerializeField] GameObject goalMap;
     [SerializeField] float moveSpeed = 0.1f;
     [SerializeField] int goalPoint = 10;
+    [SerializeField] GameObject backGround;
 
     List<GameObject> mapsObj = new List<GameObject>();
     Map map;
@@ -15,6 +16,7 @@ public class MapCreate : MonoBehaviour
     private void Start()
     {
         StartCreate();
+        Instantiate(backGround, new Vector3(80, -35, 50), Quaternion.identity);
     }
 
 
