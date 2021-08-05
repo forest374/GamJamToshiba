@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 158ac1c3cbd07834f895ff03529e255a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 8
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: iwa
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 732
+      width: 2160
+      height: 189
+    spriteID: 4843c86e81225344488193f547fbfcba
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 732}
+  - name: yama3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2581
+      y: 732
+      width: 400
+      height: 164
+    spriteID: cab1a017147988743977d6751d3a8ce3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 919, y: 664}
+  - name: yama2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3417
+      y: 161
+      width: 502
+      height: 149
+    spriteID: c7f18a360e3f2f944972f01ea48ccbbe
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2584, y: 86}
+  - name: yama1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3421
+      y: 732
+      width: 423
+      height: 145
+    spriteID: d5f55c659819d1640a5d47a35021deee
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3240, y: 646}
+  - name: "yama\uFF16"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2172
+      y: 732
+      width: 401
+      height: 166
+    spriteID: 7a74633ee166f03429b650456f8c6e9c
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1036, y: 676}
+  - name: "yama\uFF15"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3417
+      y: 4
+      width: 503
+      height: 149
+    spriteID: 49f6ec22f19b6e3419cc60226285f924
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2928, y: -83}
+  - name: "yama\uFF14"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2989
+      y: 732
+      width: 424
+      height: 145
+    spriteID: e708e8c6f33fa8f47a1a8d790548f45a
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2989, y: 645}
+  - name: kumo4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2172
+      y: 522
+      width: 287
+      height: 179
+    spriteID: 8a7ca5e2bbe315c4cbc814cc33ca6625
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1089, y: 257}
+  - name: kumo3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2172
+      y: 339
+      width: 329
+      height: 175
+    spriteID: a0313546f4265b24dab0c9ad0228137f
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1562, y: 116}
+  - name: kumo2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2846
+      y: 4
+      width: 563
+      height: 247
+    spriteID: d89f06eaa0d8ad94f835b8beedcc85cd
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2768, y: -414}
+  - name: kumo1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2172
+      y: 4
+      width: 666
+      height: 327
+    spriteID: 48daa8033cc40ce49864b7a7e65acb77
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 799, y: -376}
+  - name: onigasima
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3852
+      y: 732
+      width: 223
+      height: 225
+    spriteID: 70a9c3d89e474f547b14b2ab14d332f4
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2369, y: 633}
+  - name: sora
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 2160
+      height: 720
+    spriteID: 921e48e598ed1054fbe946f0b82ea7f6
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 2048
+  importedTextureHeight: 512
+  documentSize: {x: 2160, y: 720}
+  paperDollMode: 0
+  keepDupilcateSpriteName: 0
+  spriteCategoryList:
+    categories: []
+  textureActualWidth: 4096
+  textureActualHeight: 1024
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: iwa
+    spriteName: iwa
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4843c86e81225344488193f547fbfcba
+    layerID: 14
+    mosaicPosition: {x: 4, y: 732}
+  - name: yama3
+    spriteName: yama3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cab1a017147988743977d6751d3a8ce3
+    layerID: 13
+    mosaicPosition: {x: 2581, y: 732}
+  - name: yama2
+    spriteName: yama2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c7f18a360e3f2f944972f01ea48ccbbe
+    layerID: 12
+    mosaicPosition: {x: 3417, y: 161}
+  - name: yama1
+    spriteName: yama1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d5f55c659819d1640a5d47a35021deee
+    layerID: 11
+    mosaicPosition: {x: 3421, y: 732}
+  - name: "yama\uFF16"
+    spriteName: "yama\uFF16"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a74633ee166f03429b650456f8c6e9c
+    layerID: 10
+    mosaicPosition: {x: 2172, y: 732}
+  - name: "yama\uFF15"
+    spriteName: "yama\uFF15"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 49f6ec22f19b6e3419cc60226285f924
+    layerID: 9
+    mosaicPosition: {x: 3417, y: 4}
+  - name: "yama\uFF14"
+    spriteName: "yama\uFF14"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e708e8c6f33fa8f47a1a8d790548f45a
+    layerID: 8
+    mosaicPosition: {x: 2989, y: 732}
+  - name: kumo4
+    spriteName: kumo4
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8a7ca5e2bbe315c4cbc814cc33ca6625
+    layerID: 7
+    mosaicPosition: {x: 2172, y: 522}
+  - name: kumo3
+    spriteName: kumo3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a0313546f4265b24dab0c9ad0228137f
+    layerID: 6
+    mosaicPosition: {x: 2172, y: 339}
+  - name: kumo2
+    spriteName: kumo2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d89f06eaa0d8ad94f835b8beedcc85cd
+    layerID: 5
+    mosaicPosition: {x: 2846, y: 4}
+  - name: kumo1
+    spriteName: kumo1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 48daa8033cc40ce49864b7a7e65acb77
+    layerID: 4
+    mosaicPosition: {x: 2172, y: 4}
+  - name: onigasima
+    spriteName: onigasima
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 70a9c3d89e474f547b14b2ab14d332f4
+    layerID: 3
+    mosaicPosition: {x: 3852, y: 732}
+  - name: sora
+    spriteName: sora
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 921e48e598ed1054fbe946f0b82ea7f6
+    layerID: 2
+    mosaicPosition: {x: 4, y: 4}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+  generateGOHierarchy: 0
+  textureAssetName: haikei6 Texture
+  prefabAssetName: haikei6 Prefab
+  spriteLibAssetName: haikei6 Sprite Lib
+  secondarySpriteTextures: []
