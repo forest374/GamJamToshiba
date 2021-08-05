@@ -131,6 +131,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7693220302320707760, guid: 51a1ae0436355d9449bab0a02baee650,
+        type: 3}
+      propertyPath: m_SurfaceArc
+      value: 170
+      objectReference: {fileID: 0}
     - target: {fileID: 9156878376105531864, guid: 51a1ae0436355d9449bab0a02baee650,
         type: 3}
       propertyPath: m_RootOrder

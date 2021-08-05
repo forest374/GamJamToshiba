@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 4028784397998206944}
   - component: {fileID: 4028784397998206959}
   - component: {fileID: 4028784397998206958}
+  - component: {fileID: 5048239135889893452}
   - component: {fileID: 4167985979714208534}
   - component: {fileID: 6916855958091209718}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyBR
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -103,6 +104,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5048239135889893452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4028784397998206957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a58e0631c6f5264d82d4cf7ccfcf1dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 0}
 --- !u!61 &4167985979714208534
 BoxCollider2D:
   m_ObjectHideFlags: 0

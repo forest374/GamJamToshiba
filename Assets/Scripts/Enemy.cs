@@ -10,8 +10,10 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(this.gameObject);
-
-            AudioSource.PlayClipAtPoint(audioClip,transform.position);
+            if (audioClip)
+            {
+                AudioSource.PlayClipAtPoint(audioClip, transform.position);
+            }
         }
     }
 }
