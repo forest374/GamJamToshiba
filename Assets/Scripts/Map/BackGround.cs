@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BackGround : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 0.01f;
+    [SerializeField] float moveSpeed = 0.02f;
     private void FixedUpdate()
     {
-        if (this.transform.position.x > -80)
+        if (this.transform.position.x > -40)
         {
             transform.Translate(new Vector2(-moveSpeed, 0));
         }

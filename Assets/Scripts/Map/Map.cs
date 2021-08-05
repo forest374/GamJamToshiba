@@ -6,6 +6,8 @@ public class Map : MonoBehaviour
 {
     bool gameMove = true;
 
+    bool destroyCall = false;
+
     MapCreate mapCreate;
     float moveSpeed = 0.1f;
 
@@ -19,8 +21,9 @@ public class Map : MonoBehaviour
             transform.Translate(new Vector2(-moveSpeed, 0));
 
             float x = transform.position.x;
-            if (x <= -20)
+            if (x <= -16 && !destroyCall)
             {
+                destroyCall = true;
                 mapCreate.CreateScaffold();
             }
         }
