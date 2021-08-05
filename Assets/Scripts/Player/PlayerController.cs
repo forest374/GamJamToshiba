@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] GroundHitTest m_hitTest;
 
+    PlayerDamage m_playerDamage;
+    [SerializeField] List<Buddy> m_buddies;
+    [SerializeField] Goal m_goal;
+
     private void Start()
     {
         m_rb = GetComponent<Rigidbody2D>();
@@ -29,6 +33,9 @@ public class PlayerController : MonoBehaviour
         m_playerJump.Init(m_rb);
 
         m_playerGetItem = gameObject.AddComponent<PlayerGetItem>();
+
+        m_playerDamage = gameObject.AddComponent<PlayerDamage>();
+        m_playerDamage.Init(m_buddies, m_goal);
     }
 
     private void Update()
