@@ -32,18 +32,35 @@ public class PlayerDamage : MonoBehaviour
         m_goal = goal;
     }
 
+    public void LifeUp()
+    {
+        if (m_index != 2)
+        {
+            m_aliveBuddy[m_index].SetActive(false);
+            Vector2 point = m_aliveBuddy[m_index].transform.position;
+
+            m_index++;
+            m_aliveBuddy[m_index].SetActive(true);
+            m_aliveBuddy[m_index].transform.position = point;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-            if (m_aliveBuddy.Count != 0)
+            if (m_index != 0)
             {
                 m_aliveBuddy[m_index].SetActive(false);
-                m_aliveBuddy.Remove(m_aliveBuddy[m_index]);
+                Vector2 point = m_aliveBuddy[m_index].transform.position;
+
                 m_index--;
+                m_aliveBuddy[m_index].SetActive(true);
+                m_aliveBuddy[m_index].transform.position = point;
             }
             else
             {
+                m_aliveBuddy[m_index].SetActive(false);
                 m_goal.GameOver();
             }
         }
