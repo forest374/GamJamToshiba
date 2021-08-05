@@ -7,6 +7,7 @@ public class MapCreate : MonoBehaviour
     [SerializeField] List<GameObject> maps;
     [SerializeField] GameObject goalMap;
     [SerializeField] float moveSpeed = 0.1f;
+    [SerializeField] int goalPoint = 10;
 
     List<GameObject> mapsObj = new List<GameObject>();
     Map map;
@@ -41,7 +42,7 @@ public class MapCreate : MonoBehaviour
         int createLevel = 32;
         Vector2 mapsHeight = new Vector2(createLevel, 0);
 
-        if (count < 10)
+        if (count < goalPoint)
         {
             int num = Random.Range(0, mapsObj.Count);
             mapsObj.Add(Instantiate(maps[num], mapsHeight, Quaternion.identity));
