@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    //[SerializeField] GameObject attackZone;
     Animator anim;
 
-    private void Start()
+
+    public void Init()
     {
         anim = GetComponent<Animator>();
     }
