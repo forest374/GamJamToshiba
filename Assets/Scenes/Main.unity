@@ -446,13 +446,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maps:
-  - {fileID: 761427636281610778, guid: b2eced045ef58f24089a9f7c7b6cc4bc, type: 3}
-  - {fileID: 3024842597278437562, guid: 978c71890b6a120469e9e06a8ea27d9b, type: 3}
-  - {fileID: 6083390018919782116, guid: b1ae0b12b9d86e04abb9bdde30b43012, type: 3}
-  - {fileID: 2849475905725475396, guid: 4eed8ec64ef6cf14885d224d799a3e1f, type: 3}
-  - {fileID: 8558025048622057519, guid: 6137e00d26cc8114aa0a93a901ac6aea, type: 3}
-  - {fileID: 6525869836397955365, guid: b59f0cda8678d384bbf700147e9f2243, type: 3}
-  - {fileID: 1686767326208215622, guid: b50cf1241afef94449438de498b7d9fe, type: 3}
+  - {fileID: 815923697161652978, guid: 0768a531c43216c4fba524ed08557c00, type: 3}
+  - {fileID: 8475715389744591190, guid: 0e1b831a118dd6c40942a954a1cb2473, type: 3}
+  - {fileID: 5593089000548958043, guid: 6ae24d43923654f43b84d490ca8ea053, type: 3}
+  - {fileID: 1974490884552001914, guid: 32cf0e01638132747bd73d9dcedc7b91, type: 3}
+  - {fileID: 1666032650947617002, guid: ff13cc09efd8e2240a41384b1b00511f, type: 3}
+  - {fileID: 4495447708390663218, guid: 0762b2556e899aa4fa89da5675ecf117, type: 3}
   goalMap: {fileID: 3668083576078038951, guid: 8b46d09acffd2e14f908fc9844d178ae, type: 3}
   moveSpeed: 0.075
   goalPoint: 8
@@ -2049,7 +2048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1734234756
 RectTransform:
   m_ObjectHideFlags: 0
