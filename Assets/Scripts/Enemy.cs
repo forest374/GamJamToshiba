@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 0.03f;
 
-    Vector2 trans;
-    void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        trans = new Vector2(-moveSpeed, 0);
-    }
-
-    void FixedUpdate()
-    {
-        transform.Translate(trans);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
