@@ -12,7 +12,11 @@ public class PlayerController : MonoBehaviour
     PlayerJump m_playerJump;
     [SerializeField] float m_jumpPow;
 
-    PlayerGetItem m_playerGetItem; 
+    PlayerGetItem m_playerGetItem;
+
+    [SerializeField] private Transform m_GroundCheck;
+
+    [SerializeField] GroundHitTest m_hitTest;
 
     private void Start()
     {
@@ -29,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && m_hitTest.IsGround)
         {
             m_playerJump.Jump(m_jumpPow);
         }
