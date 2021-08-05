@@ -5,6 +5,7 @@ using UnityEngine;
 public class MapCreate : MonoBehaviour
 {
     [SerializeField] List<GameObject> maps;
+    public List<GameObject> Maps { private set { maps = value; } get { return maps; } }
     [SerializeField] GameObject goalMap;
     [SerializeField] float moveSpeed = 0.1f;
     [SerializeField] int goalPoint = 10;
@@ -57,7 +58,7 @@ public class MapCreate : MonoBehaviour
             count++;
             DestroyScaffold();
         }
-        else if(count == goalPoint)
+        else if (count == goalPoint)
         {
             mapsObj.Add(Instantiate(goalMap, mapsHeight, Quaternion.identity));
             mapsObj[mapsObj.Count - 1].AddComponent<Map>();
