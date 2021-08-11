@@ -10,6 +10,16 @@ public class Goal : MonoBehaviour
 
     [SerializeField] GameObject gameOverText = null;
     [SerializeField] GameObject gameClearText = null;
+
+    [SerializeField] AudioClip m_clearVoice = null;
+    AudioSource m_audioSource = null;
+
+    private void Start()
+    {
+        m_audioSource = GetComponent<AudioSource>();
+        if (m_audioSource == null)
+            m_audioSource = gameObject.AddComponent<AudioSource>();
+    }
     public void GameOver()
     {
         gameOverText.SetActive(true);
@@ -17,9 +27,16 @@ public class Goal : MonoBehaviour
     }
     public void GameClear()
     {
+        PlayClearVoice();
         gameClearText.SetActive(true);
         GameStop();
     }
+
+    void PlayClearVoice()
+    {
+        m_audioSource.PlayOneShot(m_clearVoice);
+    }
+
     public void GameMove()
     {
         gameOverText.SetActive(false);
