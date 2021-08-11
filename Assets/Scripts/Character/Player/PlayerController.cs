@@ -11,21 +11,18 @@ public class PlayerController : MonoBehaviour
 
     PlayerJump m_playerJump;
     [SerializeField] float m_jumpPow;
+    [SerializeField] GroundHitTest m_hitTest;
 
     PlayerGetItem m_playerGetItem;
 
     PlayerAttack m_playerAttack;
 
-
-    [SerializeField] GroundHitTest m_hitTest;
-
     PlayerDamage m_playerDamage;
     [SerializeField] List<Buddy> m_buddies;
     [SerializeField] Goal m_goal;
 
-
     bool m_move = false;
-    public bool Move { get => m_move; set {m_move = value; } }
+    public bool Move { get => m_move; set { m_move = value; } }
 
     private void Start()
     {
@@ -53,11 +50,12 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump") && m_hitTest.IsGround)
             {
-                 m_playerJump.Jump(m_jumpPow);
+                m_playerJump.Jump(m_jumpPow);
             }
 
             if (Input.GetButtonDown("Fire1"))
             {
+                m_playerAttack.m_buddy = m_playerDamage.ActiveBuddy;
                 m_playerAttack.Attack();
             }
 
