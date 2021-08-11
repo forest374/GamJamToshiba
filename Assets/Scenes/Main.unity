@@ -2492,7 +2492,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_voice
       value: 
-      objectReference: {fileID: 8300000, guid: c6c686dd6a134bd4793ea32dcd3ddb62, type: 3}
+      objectReference: {fileID: 8300000, guid: 2bfc6a00bd824c64981405d3b57911a1, type: 3}
     - target: {fileID: 6826446753839058364, guid: 395d004077590e2408f44a7a978d9018,
         type: 3}
       propertyPath: point.x
