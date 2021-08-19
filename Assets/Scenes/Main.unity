@@ -1946,7 +1946,11 @@ MonoBehaviour:
   player: {fileID: 130716633}
   gameOverText: {fileID: 1045106424}
   gameClearText: {fileID: 1734234755}
+<<<<<<< HEAD
   m_clearVoice: {fileID: 0}
+=======
+  m_clearVoice: {fileID: 8300000, guid: cc982abd66e1d0e4082620fc96e4ddc1, type: 3}
+>>>>>>> 493f1bb9d091208e8728a993fd4242f8d2707478
 --- !u!114 &1604997688
 MonoBehaviour:
   m_ObjectHideFlags: 0
