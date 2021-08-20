@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6542237715714711879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6542237715714711881}
+  - component: {fileID: 6542237715714711878}
+  - component: {fileID: 6542237715714711880}
+  - component: {fileID: 6542237715714711883}
+  - component: {fileID: 6542237715714711882}
+  - component: {fileID: 6542237715714711885}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6542237715714711881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542237715714711879}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.3798976, y: -1.0282803, z: -9.315545}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6542237715714711878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542237715714711879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65c653152ed60a49bf34df7d67092e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 6542237715714711882}
+  scoreText: {fileID: 0}
+--- !u!114 &6542237715714711880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542237715714711879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd951aaa2d84f640ab4fb222b29dca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapCreate: {fileID: 0}
+  timer: {fileID: 6542237715714711882}
+  player: {fileID: 0}
+  gameOverText: {fileID: 0}
+  gameClearText: {fileID: 0}
+  m_clearVoice: {fileID: 0}
+--- !u!114 &6542237715714711883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542237715714711879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd951aaa2d84f640ab4fb222b29dca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapCreate: {fileID: 0}
+  timer: {fileID: 6542237715714711882}
+  player: {fileID: 0}
+  gameOverText: {fileID: 0}
+  gameClearText: {fileID: 0}
+  m_clearVoice: {fileID: 0}
+--- !u!114 &6542237715714711882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542237715714711879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ad6c06c15ebdb488f543bcbc18c95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 6542237715714711878}
+  maxTimer: 100
+  goal: {fileID: 6542237715714711880}
+--- !u!114 &6542237715714711885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542237715714711879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c65c653152ed60a49bf34df7d67092e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  scoreText: {fileID: 0}

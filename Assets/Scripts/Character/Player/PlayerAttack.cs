@@ -41,6 +41,7 @@ public class PlayerAttack : MonoBehaviour
             if (m_isAttack)
             {
                 m_buddy.Talk();
+                Destroy(collision.gameObject);
             }
         }
     }
