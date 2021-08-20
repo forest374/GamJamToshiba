@@ -37,7 +37,7 @@ public class PlayerDamage : MonoBehaviour
             m_buddies.Add(buddys[i].gameObject);
         }
 
-        m_aliveBuddies = m_buddies;
+        m_aliveBuddies = new List<GameObject>(m_buddies);
         m_index = 0;
 
         m_goal = goal;
@@ -50,10 +50,13 @@ public class PlayerDamage : MonoBehaviour
     {
         if (m_aliveBuddies.Count != m_buddies.Count)
         {
-            //登録されているバディから指定したインデックスのバディを生き返らせる
-            m_aliveBuddies.Add(m_buddies[m_index]);
             //バディのポジションを後ろにずらす
             MovePosition(-1);
+            int aliveIndex = m_buddies.Count - m_aliveBuddies.Count - 1;
+            //登録されているバディから指定したインデックスのバディを生き返らせる
+            m_aliveBuddies.Insert(0, m_buddies[aliveIndex]);
+            //先頭のバディをアクティブ状態にする
+            m_aliveBuddies[0].SetActive(true);
         }
     }
 

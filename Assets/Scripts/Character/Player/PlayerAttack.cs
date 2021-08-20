@@ -7,6 +7,8 @@ public class PlayerAttack : MonoBehaviour
     Animator anim = null;
     public Buddy m_buddy = null;
     bool m_isAttack = false;
+    bool m_isHitEnemy = false;
+    GameObject m_enemyObj = null;
 
     public void Init()
     {
@@ -15,8 +17,13 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack()
     {
-        m_isAttack = true;
-        ChangeAnim();
+        if (m_isHitEnemy)
+        {
+            m_isAttack = true;
+            m_buddy.Talk();
+            Destroy(m_enemyObj);
+            ChangeAnim();
+        }
     }
 
     public void AttackEnd()
@@ -37,12 +44,17 @@ public class PlayerAttack : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            //敵倒したらお供喋らす
-            if (m_isAttack)
-            {
-                m_buddy.Talk();
-                Destroy(collision.gameObject);
-            }
+            m_isHitEnemy = true;
+            m_enemyObj = collision.gameObject;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            m_isHitEnemy = false;
+            m_enemyObj = null;
         }
     }
 }

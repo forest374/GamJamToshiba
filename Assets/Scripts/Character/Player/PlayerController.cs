@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
                 m_playerJump.Jump(m_jumpPow);
             }
 
-            if (Input.GetButtonDown("Fire1"))
+            if (Input.GetButton("Fire1"))
             {
                 m_playerAttack.m_buddy = m_playerDamage.ActiveBuddy;
                 m_playerAttack.Attack();
