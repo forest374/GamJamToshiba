@@ -11,7 +11,8 @@ public enum buddyType
 public class Buddy : MonoBehaviour
 {
     [SerializeField] Transform player;
-    [SerializeField] Vector2 point = new Vector2(-1f, 0.5f);
+    [SerializeField] Vector2 pos = new Vector2(-1f, 0.5f);
+    public Vector2 Pos { set { pos = value; } get { return pos; } }
 
     /// <summary>
     /// 声
@@ -28,7 +29,7 @@ public class Buddy : MonoBehaviour
 
     void Update()
     {
-        Vector2 trans = point + (Vector2)player.transform.position;
+        Vector2 trans = pos + (Vector2)player.transform.position;
 
         trans -= (Vector2)this.transform.position;
 
@@ -43,8 +44,6 @@ public class Buddy : MonoBehaviour
     /// </summary>
     public void Talk()
     {
-
-
         if (m_voice)
         {
             m_audioSource.PlayOneShot(m_voice);

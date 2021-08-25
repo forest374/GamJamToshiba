@@ -8,6 +8,7 @@ TagManager:
   - Item
   - Enemy
   - Goal
+  - AttackSpace
   layers:
   - Default
   - TransparentFX
